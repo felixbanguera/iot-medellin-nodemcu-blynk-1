@@ -1,16 +1,11 @@
-# Let's check our Dev kit is recognized by the Arduino IDE:
+# Hello World
 
-Connect the dev kit through USB.
+Let's start with the basics.
 
-Open the Arduino IDE and take a look to get familiar with it.
-[image](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/new_file_ide.png)
+A 'Hello World' in Electronics world is usually a blinking LED, and that's what's next.
 
-Click from File>New. The file should be empty and should only contain the setup() and loop() function declarations. Click Save and Rename the file to "nmcu_blynk" or whatever name you'd prefer. It should have created a sketch folder with that name and an *.ino file with the same.
+Click the **Open** Icon, Browse to **01. Basics** and Select **Blink** (This blink is the action for the LED, not the platform *Blynk*). Take a look at what it's been showed in this new file to get familiar with it. Ask as may questions as you need.
 
-Click the Verification Icon to verify the file is well structured (Should be done every time before compiling).
+Hit Upload... question while it compiles:
 
-Go to the Tools tab and configure as in the [image](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/config_nodemcu_ide.png).
-
-Now Click the Upload Icon to compile and flash the dev kit. It takes some seconds to compile, afterwards it should start flashing it and the on-board led should start blinking very fast. Also you can check the progress in the IDE console, it should be done when it shows . . . . . . . . . . . . . . .  . . . .  . . . . [ 100%].
-
-Notice we just check uploading and compilation works fine, but there is no action in the board yet. Let's make it do something in the next step!
+**Will this blink as it says? Why, why not?**

@@ -1,17 +1,17 @@
-# Making it blink for real!
+# Console.log??
 
-Copy the file content of the Blink example and paste it in our current file (It will not let you modified it, you can try though), then add the lines needed to define the built in LED to the correct pin number:
+Now, it would be helpful to check values on pins, and that the code is running well.
 
-    #define LED_BUILTIN 2
+**How to write to console?**
 
-Upload the code ad check for the blinking LED... **hurray!**
+The best way to do it is to write to the serial port using [serial communication](https://en.wikipedia.org/wiki/Serial_communication) and Monitor the serial ports.
 
-Note pin references can use GPIO number or board naming.
+Given we are connected through USB already, there are no HW changes needed.
 
-Take a look at the [Pin diagram](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/pin_diagram.png) to understand a bit more.
+Click in **Open>Basics>DigitalReadSerial**, copy the new lines of each section and paste them in our file in the corresponding place below of our current code, another adjustment needs to be made, instead of using the GPIO2 for pushButton, our dev kit uses GPIO0 which is D3, So replace that line with:
 
- in this case you can test so changing the definition for the LED_BUILTIN as:
+> int pushButton = D3
 
-    #define LED_BUILTIN D4
+For Monitoring the Serial communication you'll need a tool, I recommend [CoolTerm](http://freeware.the-meiers.org/).
 
-Make changes and Upload again, blinking should work the same!
+Install it and set it to listen to your usb port and Baudrate at 9600 ([usually is the default](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/coolterm_config.png)), click connect. You should start seeing the usual blinking LED and a 1 printing in CoolTerm. If you press the Flash button you should see a 0 printing in the CoolTerm [monitor]((https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/coolterm_config.png)).

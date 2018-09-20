@@ -1,25 +1,17 @@
-# Notify with Blynk:
+# Tweet Blynk:
 
-Now let's make the dev kit send notifications to our Blynk app which we'll receive in the phone as Push Notifications. Nice thing to know is they run in background.
+Now, our final step in the basics of this workshop is send a tweet using your twitter account when pushing a button. You will need a valid Twitter account to proceed.
 
-Got to your Blynk app and click the **Add widget** button. Under the **Notifications** list you find the **Notification** widget. It says it costs 400 energy points but they can be recycled later, select it, and click on it after its placed in your project's layout to see options by default, you can leave it like it is for now.
+In the Blynk app add a Twitter Widget.
 
-In the Arduino IDE define the built in push button again, adding the declaration of the variable to D3 and setting it up as INPUT, like we did in step_5, also declare a new temporal variable as:
+Tap on it and on "**Connect Twitter**". Just hit connect (or change account if you want) and that's it.
 
-    int temp = 0;
+In the Arduino IDE replace the Blynk.notify line with:
 
-Inside the loop function after the Blynk.run() call put the following lines:
+    Blynk.tweet("Tweet generated from a NodeMCU for testing purposes! In the first @IotMedellin workshop. #IoT, #Tech, #Medellin");
 
-    int estado = digitalRead(pushButton);
-    if(temp == 0 && estado == 1){
-      Blynk.notify("Hello from NodeMCU!!!");
-    }
-    temp = estado;
-    Serial.println("In loop...");
-    delay(200);
+You can change the message to whatever you want to show.
 
-Upload the code, Make sure its running with serial monitor message, and check the Blynk app, it should appear connected, and you should have received the first message. WHY???
+Upload the code and Run the app and it should  tweet as soon as the NodeMCU starts again.
 
-Also if you press, hold and release, you will receive the notification as well.
-
-Also, try putting your app to run in background and hit the button again, you should receive the Push Notification too.
+Exercise, try sending the Tweet again by pressing the button, did it work? WHY?

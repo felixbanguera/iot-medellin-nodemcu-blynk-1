@@ -1,11 +1,17 @@
-# Hello World
+# Making it blink for real!
 
-Let's start with the basics.
+Copy the file content of the Blink example and paste it in our current file (It will not let you modified it, you can try though), then add the lines needed to define the built in LED to the correct pin number:
 
-A 'Hello World' in Electronics world is usually a blinking LED, and that's what's next.
+    #define LED_BUILTIN 2
 
-Click the **Open** Icon, Browse to **01. Basics** and Select **Blink** (This blink is the action for the LED, not the platform *Blynk*). Take a look at what it's been showed in this new file to get familiar with it. Ask as may questions as you need.
+Upload the code ad check for the blinking LED... **hurray!**
 
-Hit Upload... question while it compiles:
+Note pin references can use GPIO number or board naming.
 
-**Will this blink as it says? Why, why not?**
+Take a look at the [Pin diagram](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/pin_diagram.png) to understand a bit more.
+
+ in this case you can test so changing the definition for the LED_BUILTIN as:
+
+    #define LED_BUILTIN D4
+
+Make changes and Upload again, blinking should work the same!

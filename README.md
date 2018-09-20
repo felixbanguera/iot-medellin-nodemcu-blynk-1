@@ -1,17 +1,7 @@
-# Console.log??
+# Extra exercise, shall we do it?
 
-Now, it would be helpful to check values on pins, and that the code is running well.
+Now we have a way of writing and reading to Digital pins, and also to write to Serial monitor.
 
-**How to write to console?**
+We can make an exercise of writing and reading analog Pins.
 
-The best way to do it is to write to the serial port using [serial communication](https://en.wikipedia.org/wiki/Serial_communication) and Monitor the serial ports.
-
-Given we are connected through USB already, there are no HW changes needed.
-
-Click in **Open>Basics>DigitalReadSerial**, copy the new lines of each section and paste them in our file in the corresponding place below of our current code, another adjustment needs to be made, instead of using the GPIO2 for pushButton, our dev kit uses GPIO0 which is D3, So replace that line with:
-
-> int pushButton = D3
-
-For Monitoring the Serial communication you'll need a tool, I recommend [CoolTerm](http://freeware.the-meiers.org/).
-
-Install it and set it to listen to your usb port and Baudrate at 9600 ([usually is the default](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/coolterm_config.png)), click connect. You should start seeing the usual blinking LED and a 1 printing in CoolTerm. If you press the Flash button you should see a 0 printing in the CoolTerm [monitor]((https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/coolterm_config.png)).
+Analog pins usually are for reading/controlling devices which values varies within a range. Inputs usually between 0-4095 and outputs usually between 0-255.... TBD

@@ -67,4 +67,6 @@ We can erase now all previous functionality and let's add at the end the lines:
 
     while(1){delay(0);} // this only to stop the loop from doing the request
 
-Upload the code, and connect through serial monitor, you should see something like [this](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_7/assets/images/serial_out_2.png)
+Upload the code, and connect through serial monitor, you should see something like this:
+
+![this](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_8/assets/images/serial_out_2.png)

@@ -14,4 +14,10 @@ Click in **Open>Basics>DigitalReadSerial**, copy the new lines of each section a
 
 For Monitoring the Serial communication you'll need a tool, I recommend [CoolTerm](http://freeware.the-meiers.org/).
 
-Install it and set it to listen to your usb port and Baudrate at 9600 ([usually is the default](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/coolterm_config.png)), click connect. You should start seeing the usual blinking LED and a 1 printing in CoolTerm. If you press the Flash button you should see a 0 printing in the CoolTerm [monitor]((https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_5/assets/images/coolterm_config.png)).
+Install it and set it to listen to your usb port and Baudrate at 9600 (usually is the default).
+
+![usually is the default](https://raw.githubusercontent.com/felixbanguera/iot-medellin-nodemcu-blynk-1/step_5/assets/images/coolterm_config.png)
+
+click connect. You should start seeing the usual blinking LED and a 1 printing in CoolTerm. If you press the Flash button you should see a 0 printing in the CoolTerm monitor: 
+
+![monitor](https://raw.githubusercontent.com/felixbanguera/iot-medellin-nodemcu-blynk-1/step_5/assets/images/serial_out_1.png).

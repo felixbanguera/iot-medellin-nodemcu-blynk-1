@@ -10,3 +10,10 @@ The instruction to run in console should be be something like the following for 
 
 Windows Flashing option:
 https://randomnerdtutorials.com/flashing-nodemcu-firmware-on-the-esp8266-using-windows/
+
+
+Note: to listo ports in linux 
+	ls -l /dev/tty*
+
+
+Note2: Permission sudo chmod -R 777 /dev/ttyUSB0

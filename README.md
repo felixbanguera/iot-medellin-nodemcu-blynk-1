@@ -1,15 +1,27 @@
-# Setup Blynk:
+# HelloWorld Blynk:
 
-Make sure you have Blynk app installed and have created an account, login to it and select **New Project**.
+Now let's configure the dev kit to connect to the Blynk app:
 
-You can choose whatever name you want, I would suggest 'workshop_NodeMCU_1'.
+ - Include the library for Blynk+ESP8266
 
-In **devices** choose **ESP8266**. In connection type choose **Wi-Fi**. Extra you can choose the app theme as you prefer.
+> #include <BlynkSimpleEsp8266.h>
 
-The next message you'll receive is one saying:
+ - Define a constant for the AuthToken with the one received in the email
 
-> *"Auth Token was sent to: the@email.com"*
+> char auth [] = "98d_the_authentication_token_94";
 
-this Auth token will be the one telling your dev kit to connect to your Blynk app.
+ -  Begin Blynk connection in setup function, so you will no longer need Wi-Fi manually connection. Remove all setup lines and only include:
 
-Let's explore the app created a little more, do not make any changes, just click the options on top (**Settings, Add Widget Box, Run**).
+> Serial.begin(9600); //For monitoring purposes
+> Blynk.begin(auth, ssid, password);
+
+ - Run Blynk inside the loop function, also add a default print to monitor it's running:
+
+> Blynk.run();
+> Serial.println("In loop...");
+> delay(500);
+
+Upload the code and it will show "In loop..." in the Serial Monitor, at the same time Run the Blynk app you created and you should see it is connected to the board. With a message like:
+
+> workshop_NodeMCU_1
+> Online since hh:mm PM Sep 20, 2018

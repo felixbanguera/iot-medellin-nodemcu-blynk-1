@@ -8,7 +8,7 @@ Upload the code ad check for the blinking LED... **hurray!**
 
 Note pin references can use GPIO number or board naming.
 
-Take a look at the [Pin diagram](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/pin_diagram.png) to understand a bit more.
+Take a look at the [Pin diagram](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_4/assets/images/pin_diagram.png) to understand a bit more.
 
  in this case you can test so changing the definition for the LED_BUILTIN as:
 

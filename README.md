@@ -6,3 +6,7 @@ The instruction to run in console should be be something like the following for 
 
     esptool.py --port=/dev/cu.wchusbserial1410  write_flash  -fm=dio
     -fs=32m 0x00000 ./nodemcu-master-13-modules-2018-07-11-17-46-03-float.bin
+
+
+Windows Flashing option:
+https://randomnerdtutorials.com/flashing-nodemcu-firmware-on-the-esp8266-using-windows/

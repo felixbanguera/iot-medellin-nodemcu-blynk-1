@@ -11,6 +11,8 @@ Note pin references can use GPIO number or board naming.
 Take a look at the Pin diagram to understand a bit more:
 
 ![Pin diagram](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_4/assets/images/pin_diagram.png) 
+
+
  in this case you can test so changing the definition for the LED_BUILTIN as:
 
     #define LED_BUILTIN D4

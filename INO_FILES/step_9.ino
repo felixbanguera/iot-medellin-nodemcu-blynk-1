@@ -5,9 +5,9 @@
 
 #include <BlynkSimpleEsp8266.h>
 
-const char* ssid = "Yuxi Global"; // Rellena con el nombre de tu red WiFi
-const char* password = "W310V3w3d0"; // Rellena con la contraseña de tu red WiFi
-const char* auth = "bc797978b45e4520ac5cfe0745883b41";
+const char* ssid = "network name"; // Rellena con el nombre de tu red WiFi
+const char* password = "network password"; // Rellena con la contraseña de tu red WiFi
+const char* auth = "###########_AUTH_TOKEN_############";
 
 // the setup function runs once when you press reset or power the board
 void setup() {

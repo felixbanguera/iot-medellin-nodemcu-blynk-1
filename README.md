@@ -12,7 +12,7 @@ Take a look at the ino file, it basically says it will blink a led with delay de
 
 The circuit diagram should be similar to the following:
 
-![Circuit diagram]()
+![Circuit diagram](https://raw.githubusercontent.com/felixbanguera/iot-medellin-nodemcu-blynk-1/step_6/assets/images/circuit_diagram.png)
 
 Also the code can be adjusted to the following in order to see the sensor values in the serial monitor, and to see it blink slower.
 

@@ -14,9 +14,13 @@ Click in **Open>Basics>DigitalReadSerial**, copy the new lines of each section a
 
 For Monitoring the Serial communication you'll need a tool, The Arduino IDE have a simple Serial monitor you can use, go to **Tools**>**Serial Monitor**:
 
+![usually is the default](https://raw.githubusercontent.com/felixbanguera/iot-medellin-nodemcu-blynk-1/step_5/assets/images/IDE_serial_monitor.png)
+
 If you want to use a different tool I recommend [CoolTerm](http://freeware.the-meiers.org/).
 
 Set the Serial Monitor you chose to listen to your usb port and Baudrate at 9600 (usually is the default).
+
+Coolterm:
 
 ![usually is the default](https://raw.githubusercontent.com/felixbanguera/iot-medellin-nodemcu-blynk-1/step_5/assets/images/coolterm_config.png)
 

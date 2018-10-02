@@ -14,9 +14,12 @@ Click in **Open>Basics>DigitalReadSerial**, copy the new lines of each section a
 
 For Monitoring the Serial communication you'll need a tool, The Arduino IDE have a simple Serial monitor you can use, go to **Tools**>**Serial Monitor**:
 
-
-![usually is the default](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_5/assets/images/IDE_serial_monitor.png)
-
 If you want to use a different tool I recommend [CoolTerm](http://freeware.the-meiers.org/).
 
-Set the Serial Monitor you chose to listen to your usb port and Baudrate at 9600 ([usually is the default](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/coolterm_config.png)), click connect. You should start seeing the usual blinking LED and a 1 printing in CoolTerm. If you press the Flash button you should see a 0 printing in the CoolTerm [monitor]((https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_2/assets/images/coolterm_config.png)).
+Set the Serial Monitor you chose to listen to your usb port and Baudrate at 9600 (usually is the default).
+
+![usually is the default](https://raw.githubusercontent.com/felixbanguera/iot-medellin-nodemcu-blynk-1/step_5/assets/images/coolterm_config.png)
+
+click connect. You should start seeing the usual blinking LED and a 1 printing in Serial Monitor. If you press the Flash button you should see a 0 printing in the Serial Monitor:
+
+![monitor](https://raw.githubusercontent.com/felixbanguera/iot-medellin-nodemcu-blynk-1/step_5/assets/images/serial_out_1.png).

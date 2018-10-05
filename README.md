@@ -5,9 +5,9 @@ Now we have a way of writing and reading to Digital pins, and also to write to S
 
 We can make an exercise of writing and reading analog Pins.
 
-Analog pins usually are for reading/controlling devices which values varies within a range. Inputs usually between 0-4095 and outputs usually between 0-255.... TBD
+Analog pins usually are for reading/controlling devices which values varies within a range. Inputs usually between 0-4095 and outputs usually between 0-255.
 
-To read an Analogbinput let's follow a basic example. Go to **Open**>**03.Analog**>**Analog Input**
+To read an Analog input let's follow a basic example. Go to **Open**>**03.Analog**>**Analog Input**
 
 Take a look at the ino file, it basically says it will blink a led with delay depeding on an Analog read from a Potentiometer. The analog sensor can also be a Photoresistor.
 

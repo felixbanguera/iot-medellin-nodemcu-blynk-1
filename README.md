@@ -1,3 +1,8 @@
+# iot-medellin-nodemcu-blynk-1
+Repository for the workshop steps about get hands on Node MCU and Blynk.
+Slides for that can be found at: https://slides.com/felixxilef/nodemcu_blynk_workshop_1
+
+
 # Making the Micro-controller work as a NodeMCU (Arduino-ish mc):
 
 The NodeMCU dev kit is based on a blank [micro-controller](https://internetofthingsagenda.techtarget.com/definition/microcontroller), so we first need to tell it it should work as a NodeMCU firmware. Download the [*.bin](https://github.com/felixbanguera/iot-medellin-nodemcu-blynk-1/blob/step_1/assets/installation/nodemcu-master-13-modules-2018-07-11-17-46-03-float.bin) file from the repository, and install following the recommendations on the [docs](https://nodemcu.readthedocs.io/en/master/en/flash/) page.
